@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1 class="title">REMINDER</h1>
+        <img src="./icon/double_arrow-white-48dp.svg" 
+        class="side-nav-show-icon">
+        <nav class="side-nav">
+            <h2>Dodaj przypomnienie</h2>
+            <textarea rows="10" cols="10" class="task-text" value=""></textarea>
+            <div class="radio-container">
+            <input type="radio" id="zero" name="time" value=0 checked>
+            <label for="zero">brak</label>
+            <input type="radio" id="five" name="time" value=5>
+            <label for="five">pięć</label>
+            <input type="radio" id="ten" name="time" value=10>
+            <label for="ten">dziesięć</label>
+            </div>
+            <button class="btn">Dodaj</button>
+            <div class="task-list-container">
+             <h2 class="task-list-title">Lista zadań</h2>   
+            </div>
+        </nav>
+        <div class="container">
+            
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+         
+            <script src="./app.js" async defer></script>
+    </body>
+</html>

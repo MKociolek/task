@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+body{
+    color: #333;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url("./img/mainbackground.jpg") no-repeat;
+    background-size: cover;
+    font-family: 'Roboto',serif;
+    font-size: 15px;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+.title{
+    color: #eee;
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    top: 0;
+    padding: 0 10px;
+    position: relative;
+    transition: 0.5s;
+    font-weight: bolder;
+    text-shadow: #333;
+}
+.title-active{
+    top: -100px;
+}
+.btn{
+    display:block;
+    margin: 10px auto;
+    color: #333;
+
+}
+.task-card{
+    display: inline-block;
+    max-height: auto;
+    min-width: 175px;
+    max-width: 500px;
+    background: #f48806;
+    position: absolute;
+    visibility: hidden;
+    border-radius: 5px;
+}
+.task-card-close-btn{
+    display: block;
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+.task-card-title{
+    display: flexbox;
+    font-size: 2rem;
+    position: relative;
+    top: 35px;
+    text-align: center;
+    background-color: #333;
+    color: #eee;
+    max-width: 500px;
+    height: auto;
+    padding: 0 10px;
+}
+.task-card-text{
+    display: block;
+    max-height: 450px;
+    font-size: 1rem;
+    color:  rgb(20, 22, 31);
+    padding: 50px 0 25px 0;
+    text-align: center;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.side-nav-show-icon{
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    transition: 0.8s;
+}
+.side-nav{
+    position: relative;
+    z-index: 5;
+    height: 100vh;
+    width: 400px;
+    background: #eee;
+    left: -400px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px #000;
+    border-top-right-radius: 15px;
+}
+.side-panel-active{
+    left: 0;
+}
+.side-nav-show-icon-active{
+    left: 420px;
+    transform: rotateY(180deg);
+}
+.task-text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
+    background: rgba(51, 51, 51, 0.048);
+    color: #333;
+    border: 1px dotted #333;
+    border-radius: 3%;
+    height: 100px;
+    width: 300px;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px 0;
+    text-align: center;
+}
+.radio-container{
+    display: block;
+    margin: 2% 95px;
+}
+label{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.new-task-list{
+    font-size: 2rem;
+    font-weight: 600;
+    width: fit-content;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #f48806;
+    text-decoration-style: double;
+}
+.task-list-title{
+    font-size: 1rem;
+}
