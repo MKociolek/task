@@ -56,6 +56,9 @@ body{
     visibility: hidden;
     border-radius: 5px;
 }
+.task-card-deactive{
+    display: none;
+}
 .task-card-close-btn{
     display: block;
     position: absolute;
@@ -132,7 +135,7 @@ h2{
 }
 .radio-container{
     display: block;
-    margin: 2% 95px;
+    margin: 0 95px;
 }
 label{
     font-size: 1.2rem;
@@ -151,4 +154,18 @@ label{
 }
 .task-list-title{
     font-size: 1rem;
+}
+.time-list-title{
+    font-size: 1rem;
+    margin-top: 2rem;
+
+}
+
+.blink-text{
+
+    animation: blinkingText 0.5s infinite;
+}
+@keyframes blinkingText{
+    from {background-color:#f48806;}
+    to {background-color: #eee}
 }
